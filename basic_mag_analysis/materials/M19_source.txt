@@ -1,0 +1,12 @@
+AK Steel Di-Max M-19 fully processed non-oriented silicon steel
+0.014 inch (0.36 mm, 29 gauge)
+
+DC magnetization curve data extracted from:
+Lamination Steels Third Edition (Electric Motor Education and Research Foundation, 2007)
+MIT OpenCourseWare excerpt:
+https://ocw.mit.edu/courses/6-685-electric-machines-fall-2013/64bf1faf0a973d9607334321dd252794_MIT6_685F13_ps03data.pdf
+
+Original units: B in Gauss, H in Oe / A/m
+Converted B to Tesla (divide by 10 000).
+
+These points represent a typical DC curve for this grade; actual material may vary with processing.
