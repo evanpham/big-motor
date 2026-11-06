@@ -43,7 +43,10 @@ class Material:
 
 
 class AxialPoleCircuit:
-    """Single-pole axial-flux magnetic circuit with parallel rotor path."""
+    """Single-pole axial-flux magnetic circuit with parallel rotor path.
+
+    R is the average radius used for circumferential offset (d = R * theta).
+    """
 
     def __init__(
         self,
@@ -92,27 +95,37 @@ class AxialPoleCircuit:
 
         return R_s, R_a, R_r
 
-    def solve_phi(self, i: float, theta: float, tol: float = 1e-6, max_iter: int = 50) -> float:
-        """Solve for flux given current and position (simple fixed-point iteration)."""
+    def solve_phi(self, i: float, theta: float, tol: float = 1e-8, max_iter: int = 60) -> float:
+        """Solve for flux given current and position using bisection on residual."""
         if abs(i) < 1e-12:
             return 0.0
 
-        # Initial guess from linear high-mu approximation
-        R_s0 = self.ell_s / (self.mat_s.mu_r * MU0 * self.W * self.D)
-        R_a = self.ell_a / (MU0 * self.W * self.D)
-        overlap = max(self.D - self.R * theta, 1e-9)
-        R_r0 = self.ell_r / (self.mat_r.mu_r * MU0 * self.W * overlap)
-        R_tot0 = R_s0 + R_a + R_r0
-        phi = self.N * i / R_tot0
+        target_mmf = self.N * i
+
+        def residual(phi: float) -> float:
+            R_s, R_a, R_r = self._reluctances(phi, theta)
+            return (R_s + R_a + R_r) * phi - target_mmf
+
+        # Bracket the root. Flux is positive for positive current.
+        R_min = self.ell_a / (MU0 * self.W * self.D)
+        phi_hi = target_mmf / R_min * 2.0
+        phi_lo = 0.0
+
+        for _ in range(10):
+            if residual(phi_hi) > 0:
+                break
+            phi_hi *= 2.0
 
         for _ in range(max_iter):
-            R_s, R_a, R_r = self._reluctances(phi, theta)
-            R_tot = R_s + R_a + R_r
-            phi_new = self.N * i / R_tot
-            if abs(phi_new - phi) < tol * (abs(phi) + 1e-12):
-                return phi_new
-            phi = 0.7 * phi + 0.3 * phi_new  # under-relaxation
-        return phi
+            phi_mid = 0.5 * (phi_lo + phi_hi)
+            r = residual(phi_mid)
+            if abs(r) < tol * target_mmf or (phi_hi - phi_lo) < tol * phi_hi:
+                return phi_mid
+            if r > 0:
+                phi_hi = phi_mid
+            else:
+                phi_lo = phi_mid
+        return 0.5 * (phi_lo + phi_hi)
 
     def lambda_(self, i: float, theta: float) -> float:
         """Flux linkage."""
@@ -128,7 +141,6 @@ class AxialPoleCircuit:
 
     def torque(self, i: float, theta: float, dtheta: float = 1e-4) -> float:
         """Torque via finite difference of co-energy at constant current."""
-        # Central difference
         Wc_plus = self.coenergy(i, theta + dtheta)
         Wc_minus = self.coenergy(i, theta - dtheta)
         return (Wc_plus - Wc_minus) / (2 * dtheta)
@@ -158,8 +170,6 @@ def linear_torque_analytic(
     R_r = 1.0 / (1.0 / R_iron + 1.0 / R_air)
     R_tot = R_s + R_a + R_r
 
-    # dR_r / dtheta
-    # After algebra: dR_r/dθ = (ell_r / (mu0 W)) * R * (mu_r - 1) / [mu_r(D - Rθ) + Rθ]^2
     denom = mu_r * (D - R * theta) + R * theta
     dRr_dtheta = (ell_r / (MU0 * W)) * R * (mu_r - 1) / denom**2
 
