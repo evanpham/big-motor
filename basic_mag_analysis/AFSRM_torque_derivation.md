@@ -2,7 +2,8 @@
 ## (Magnetic-circuit / co-energy approach)
 
 ### Geometry and notation
-- \(R\): outer radius of the machine (used so that circumferential offset \(d \approx R\theta\))
+- \(R\): **average** radius of the pole arc, \(R = (R_\text{outer} + R_\text{inner})/2\)  
+  (used so that circumferential offset \(d = R\theta\); this is more accurate than using the outer radius alone)
 - \(D\): pole width (aligned overlap dimension)
 - \(W\): axial length (or stack width) of the pole
 - \(\ell_s, \ell_r, \ell_a\): magnetic path lengths in stator iron, rotor iron, and main air-gap
@@ -11,6 +12,11 @@
 - \(N\): number of turns
 - \(\theta\): rotor position (0 = aligned)
 - \(\mathcal{R}\): total reluctance of the magnetic circuit (double-struck R in the original notes)
+
+Percent alignment is defined as
+\[
+\%\text{alignment} = 100 \times \left(1 - \frac{R\theta}{D}\right).
+\]
 
 ### Assumptions
 1. All flux is guided by the iron; leakage and fringing outside the simple circuit are neglected.
@@ -103,12 +109,13 @@ The analytic rearranged form given in the original notes applies in this limit.
 
 ### Implementation notes for code
 - Guard the domain: \(0 \le R\theta < D\) (or switch to a different expression past full misalignment).
-- Nonlinear solution: for each \((i,\theta)\) iterate on \(\phi\) (or \(\lambda\)) until MMF balance is satisfied, using the material \(B\)–\(H\) curve for the iron segments. A simple fixed-point or Newton iteration on flux is usually sufficient.
+- Nonlinear solution: for each \((i,\theta)\) iterate on \(\phi\) (or \(\lambda\)) until MMF balance is satisfied, using the material \(B\)–\(H\) curve for the iron segments. A robust root-finding method (bisection or Newton) on the MMF residual is preferred over simple fixed-point iteration once the material saturates.
 - Prefer working from the \(B\)–\(H\) datasheet directly rather than a pre-fitted \(\mu(B)\); convert to \(\mu = B/(\mu_0 H)\) only if needed.
 - Co-energy must be obtained by numerical integration of \(\lambda(i)\) whenever the material is nonlinear.
+- At exact alignment (\(\theta = 0\)) torque is identically zero by symmetry; numerical finite differences should special-case this point.
 - Expected limitations (for later FEA comparison):
   - Neglect of 3-D leakage/fringing underestimates \(\lambda\) in the unaligned position → overestimates torque at large \(\theta\).
-  - Outer-radius approximation \(d=R\theta\) slightly over-weights area change; an average-radius or integrated-arc treatment is more accurate.
+  - The average-radius approximation is better than the outer-radius approximation; an integrated-arc treatment is still more accurate.
   - The simple parallel iron/air split is only a first-order representation of the position-dependent flux paths.
 
 ### Quick validation checks
