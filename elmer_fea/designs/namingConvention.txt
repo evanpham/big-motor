@@ -1,0 +1,3 @@
+<rotor_tooth_depth>_<back_iron_depth>_<stator_tooth_width>_<stator_leg_height>_<BackIronAdditionalThk>_<taper_step_length>_<inner_fillet_rad>
+
+13_10_5.6_10_3.5_2_3

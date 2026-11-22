@@ -1,0 +1,13 @@
+{
+ "design": "phase_16_10_5.6_10_3.5_2_3_L1",
+ "J_coil_A_mm2": 7.540007418994954,
+ "V_iron_cm3_per_pole": 10.122942471306395,
+ "T_peak_Nm": 1.406666378893,
+ "angle_peak_deg": 2.5,
+ "psi_aligned_over_unaligned": 1.8309969280537317,
+ "window_start_deg": 0.5,
+ "T_avg_window_Nm": 1.2225108438724916,
+ "T_min_window_Nm": 0.7646150287749001,
+ "T_avg_per_cm3": 0.12076635299842053,
+ "T_avg_phase_Nm": 48.900433754899666
+}

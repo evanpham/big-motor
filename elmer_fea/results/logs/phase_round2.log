@@ -1,0 +1,91 @@
+##### 13_10_5.6_10_3.5_2_3
+=== 00.0deg  22:24:33
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 212s on 4 process(es), nonlinear iterations: 19
+  torque_Nm              -0.00018709
+=== 00.5deg  22:28:23
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 234s on 4 process(es), nonlinear iterations: 19
+  torque_Nm              0.73282
+=== 01.0deg  22:32:37
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 242s on 4 process(es), nonlinear iterations: 21
+  torque_Nm              1.0702
+=== 01.5deg  22:37:00
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 239s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.2844
+=== 02.0deg  22:41:18
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 222s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.3855
+=== 02.5deg  22:45:20
+##### Post_2026-11-15_discussion/13_10_5.6_10_3.5_2_3
+=== 00.0deg already done
+=== 00.5deg already done
+=== 01.0deg already done
+=== 01.5deg already done
+=== 02.0deg already done
+=== 02.5deg  10:42:55
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 214s on 4 process(es), nonlinear iterations: 14
+  torque_Nm              1.4054
+=== 03.0deg  10:46:54
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 247s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              1.3383
+=== 03.5deg  10:51:23
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 244s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.79703
+=== 04.0deg  10:55:50
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 176s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.29095
+=== 04.5deg  10:59:07
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 170s on 4 process(es), nonlinear iterations: 13
+  torque_Nm              -0.0020773
+=== sweep done 11:02:17  -> runs/phase_13_10_5.6_10_3.5_2_3_L1
+##### Post_2026-11-15_discussion/10_10_5.6_10_2.1_2_3
+=== 00.0deg  11:02:17
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 153s on 4 process(es), nonlinear iterations: 18
+  torque_Nm              -0.0018155
+=== 00.5deg  11:05:09
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 170s on 4 process(es), nonlinear iterations: 18
+  torque_Nm              0.57481
+=== 01.0deg  11:08:19
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 197s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              0.8345
+=== 01.5deg  11:11:54
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 187s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.0532
+=== 02.0deg  11:15:20
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 204s on 4 process(es), nonlinear iterations: 18
+  torque_Nm              1.2424
+=== 02.5deg  11:19:02
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 201s on 4 process(es), nonlinear iterations: 18
+  torque_Nm              1.3555
+=== 03.0deg  11:22:43
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 212s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.3326
+=== 03.5deg  11:26:35
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 186s on 4 process(es), nonlinear iterations: 18
+  torque_Nm              0.79515
+=== 04.0deg  11:30:01
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 139s on 4 process(es), nonlinear iterations: 14
+  torque_Nm              0.28323
+=== 04.5deg  11:32:39
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 116s on 4 process(es), nonlinear iterations: 14
+  torque_Nm              -0.002293
+=== sweep done 11:34:55  -> runs/phase_10_10_5.6_10_2.1_2_3_L1

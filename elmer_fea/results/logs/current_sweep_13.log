@@ -1,0 +1,49 @@
+=== 45A 00.5deg 12:52:16
+  solve time: 217s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              0.8427
+=== 45A 01.5deg 12:56:20
+  solve time: 261s on 4 process(es), nonlinear iterations: 19
+  torque_Nm              1.6361
+=== 45A 02.5deg 13:01:02
+  solve time: 301s on 4 process(es), nonlinear iterations: 18
+  torque_Nm              1.9629
+=== 45A 03.5deg 13:06:27
+  solve time: 268s on 4 process(es), nonlinear iterations: 16
+  torque_Nm              1.2054
+=== 50A 00.5deg 13:11:17
+  solve time: 189s on 4 process(es), nonlinear iterations: 20
+  torque_Nm              0.89127
+=== 50A 01.5deg 13:14:52
+  solve time: 238s on 4 process(es), nonlinear iterations: 19
+  torque_Nm              1.79
+=== 50A 02.5deg 13:19:13
+  solve time: 274s on 4 process(es), nonlinear iterations: 19
+  torque_Nm              2.2233
+=== 50A 03.5deg 13:24:11
+  solve time: 273s on 4 process(es), nonlinear iterations: 16
+  torque_Nm              1.4318
+=== 60A 00.5deg 13:29:08
+  solve time: 141s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.96985
+=== 60A 01.5deg 13:31:52
+  solve time: 182s on 4 process(es), nonlinear iterations: 19
+  torque_Nm              2.0329
+=== 60A 02.5deg 13:35:17
+  solve time: 237s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              2.6242
+=== 60A 03.5deg 13:39:37
+  solve time: 304s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.8287
+=== 70A 00.5deg 13:45:06
+  solve time: 133s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              1.032
+=== 70A 01.5deg 13:47:39
+  solve time: 137s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              2.2225
+=== 70A 02.5deg 13:50:15
+  solve time: 182s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              2.9138
+=== 70A 03.5deg 13:53:39
+  solve time: 267s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              2.1332
+=== all done 13:58:26

@@ -1,0 +1,95 @@
+##### Post_2026-11-15_discussion/16_10_5.6_10_3.5_2_3
+=== 00.0deg  13:44:37
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 219s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.0019391
+=== 00.5deg  13:48:36
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 258s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              0.76462
+=== 01.0deg  13:53:14
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 256s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.1072
+=== 01.5deg  13:57:50
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 290s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.3085
+=== 02.0deg  14:03:00
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 247s on 4 process(es), nonlinear iterations: 16
+  torque_Nm              1.394
+=== 02.5deg  14:07:27
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 256s on 4 process(es), nonlinear iterations: 16
+  torque_Nm              1.4067
+=== 03.0deg  14:12:03
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+solver failed, see elmer_fea/runs/phase_16_10_5.6_10_3.5_2_3_L1/03.0deg/solver.log
+=== 03.5deg  14:13:22
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 256s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.79257
+=== 04.0deg  14:17:58
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 193s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.29534
+=== 04.5deg  14:21:33
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 224s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              -0.0014503
+=== sweep done 14:25:39  -> runs/phase_16_10_5.6_10_3.5_2_3_L1
+##### Post_2026-11-15_discussion/13_10_5.6_10_2.1_2_3
+=== 00.0deg  14:25:39
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 156s on 4 process(es), nonlinear iterations: 16
+  torque_Nm              -0.00011528
+=== 00.5deg  14:28:35
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 159s on 4 process(es), nonlinear iterations: 16
+  torque_Nm              0.6661
+=== 01.0deg  14:31:34
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 210s on 4 process(es), nonlinear iterations: 20
+  torque_Nm              0.97497
+=== 01.5deg  14:35:23
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 199s on 4 process(es), nonlinear iterations: 18
+  torque_Nm              1.2044
+=== 02.0deg  14:39:02
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 201s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.3502
+=== 02.5deg  14:42:43
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 195s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              1.3983
+=== 03.0deg  14:46:17
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 187s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              1.3395
+=== 03.5deg  14:49:45
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 182s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.79193
+=== 04.0deg  14:53:06
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 124s on 4 process(es), nonlinear iterations: 14
+  torque_Nm              0.291
+=== 04.5deg  14:55:30
+WARNING: coil overlapped the cores by 34.3 mm3 in total, trimmed
+  solve time: 129s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              -0.0023158
+=== sweep done 14:57:59  -> runs/phase_13_10_5.6_10_2.1_2_3_L1
+=== 03.0deg  14:58:11
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+solver failed, see elmer_fea/runs/phase_16_10_5.6_10_3.5_2_3_L1/03.0deg/solver.log
+=== sweep done 15:00:15  -> runs/phase_16_10_5.6_10_3.5_2_3_L1
+=== 03.0deg rerun with H_GAP=0.49 15:00:26
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+solver failed, see elmer_fea/runs/phase_16_10_5.6_10_3.5_2_3_L1/03.0deg/solver.log
+=== 03.0deg rerun with MIN_FRAG=0.05 (edge sliver dropped) 15:03:04
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+volumes: middle core 1, other cores 2, coil 1, middle tooth 1, other teeth 2, air 1
+  solve time: 231s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              1.3402

@@ -1,0 +1,41 @@
+=== 00.0deg  21:11:52
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 200s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              -0.0024935
+=== 00.5deg  21:15:34
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 195s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              0.59372
+=== 01.0deg  21:19:08
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 199s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              0.86057
+=== 01.5deg  21:22:46
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 220s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.0777
+=== 02.0deg  21:26:45
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 200s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              1.2517
+=== 02.5deg  21:30:25
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 225s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              1.3608
+=== 03.0deg  21:34:29
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 235s on 4 process(es), nonlinear iterations: 16
+  torque_Nm              1.3317
+=== 03.5deg  21:38:44
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 227s on 4 process(es), nonlinear iterations: 19
+  torque_Nm              0.79217
+=== 04.0deg  21:42:50
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 190s on 4 process(es), nonlinear iterations: 17
+  torque_Nm              0.28588
+=== 04.5deg  21:46:20
+WARNING: coil overlapped the cores by 41.7 mm3 in total, trimmed
+  solve time: 174s on 4 process(es), nonlinear iterations: 15
+  torque_Nm              -0.0024176
+=== sweep done 21:49:33  -> runs/phase_10_10_5.6_10_3.5_2_3_L1
